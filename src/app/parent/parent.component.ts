@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  constructor() { }
+  counter = 0;
 
   ngOnInit(): void {
   }
 
+  countChangedHandler() {
+    this.counter++;
+  }
 }
